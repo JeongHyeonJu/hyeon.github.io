@@ -6,28 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Welcome to injaju">
-    <title>version1 - Welcome to injaju</title>
+    <title>Cube version1 - Welcome to injaju</title>
     <meta name="author" content="injaju">
     
     
         <link rel="icon" href="https://jeonghyeonju.gitgub.io/assets/images/favicon.ico">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"injaju","sameAs":["https://github.com/"],"image":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7"},"articleBody":"정육면체를 그려보자. 프로젝트명 Cube.\n정육면체를 그리는데 이렇게 힘들 줄이야!네모 6개를 그리고 transform을 이용해 네모를 변형하여 연결하면 정육면체를 그릴 수 있다고 생각했지만, 도형을 원하는 대로 변형하기 너무 어려웠다.“정육면체 그리는 법”을 검색하지 않고 transform 관련 검색을 통해 네모를 변형하는 작업을 진행하고 싶었으나 검색 도중에 완성된 글을 보고 말았다.\nUsing CSS transforms글을 읽어보아도 무슨 말인지 어떻게 화면에 이렇게 표현되는지 이해하기 어려워 perspective에 대해 찾아보았다\nCSS3 3D effect(perspective) #1친절한 설명으로 perspective가 원근감을 주는 초점인 것을 알게 되었다\nperspective-origin, perspective, translateZ 등 값을 조절하여 위치와 모양을 변형해 보았다\nfront 네모와 back 네모가 각각 Z축이 translateZ(50px)로 설정되어있다12345678910.front   background: rgba(0, 0, 0, 0.3);  transform: translateZ(50px);&#125;.back &#123;  background: rgba(0, 255, 0, 1);  color: black;  transform: rotateY(180deg) translateZ(50px);&#125;\nback의 Z축 설정을 -50px이 아니라 50px이라는 점이 신기했다rotateY(180deg)로 기준 축의 방향이 바뀌어 -50px이 아니라 50px으로 Z축을 이동해야 뒤로 가는 효과가 나온다.back에 쓰인 글자(숫자6)를 보면 방향이 바뀌었음을 알 수 있다.\n\n도형을 변형하기 위해 찾아보던 도중 transform의 속성으로 translate, rotate, skew이외에 sknew가 있는 것을 이번에 알게 되었다.\nbackface-visibility: visible과 hidden의 차이를 제대로 아는 것인지 잘 모르겠다CSS3 : backface-visibility 속성(image flip 구현)이 설명을 읽고 난 후 차이점이 보여 알았다고 생각했지만backface-visibility이 글의 예제에서는 아무 차이가 없어 보여 이해가 덜된 것 같다.\n","dateCreated":"2018-09-30T17:41:40+09:00","dateModified":"2018-10-01T00:34:21+09:00","datePublished":"2018-09-30T17:41:40+09:00","description":"정육면체를 그려보자. 프로젝트명 Cube.","headline":"version1","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://jeonghyeonju.gitgub.io/2018/09/30/version1/"},"publisher":{"@type":"Organization","name":"injaju","sameAs":["https://github.com/"],"image":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7","logo":{"@type":"ImageObject","url":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7"}},"url":"https://jeonghyeonju.gitgub.io/2018/09/30/version1/","keywords":"transform, 3d"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"injaju","sameAs":["https://github.com/"],"image":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7"},"articleBody":"정육면체를 그려보자. 프로젝트명 Cube.\n정육면체를 그리는데 이렇게 힘들 줄이야!네모 6개를 그리고 transform을 이용해 네모를 변형하여 연결하면 정육면체를 그릴 수 있다고 생각했지만, 도형을 원하는 대로 변형하기 너무 어려웠다.“정육면체 그리는 법”을 검색하지 않고 transform 관련 검색을 통해 네모를 변형하는 작업을 진행하고 싶었으나 검색 도중에 완성된 글을 보고 말았다.\nUsing CSS transforms글을 읽어보아도 무슨 말인지 어떻게 화면에 이렇게 표현되는지 이해하기 어려워 perspective에 대해 찾아보았다\nCSS3 3D effect(perspective) #1친절한 설명으로 perspective가 원근감을 주는 초점인 것을 알게 되었다\nperspective-origin, perspective, translateZ 등 값을 조절하여 위치와 모양을 변형해 보았다\nfront 네모와 back 네모가 각각 Z축이 translateZ(50px)로 설정되어있다12345678910.front   background: rgba(0, 0, 0, 0.3);  transform: translateZ(50px);&#125;.back &#123;  background: rgba(0, 255, 0, 1);  color: black;  transform: rotateY(180deg) translateZ(50px);&#125;\nback의 Z축 설정을 -50px이 아니라 50px이라는 점이 신기했다rotateY(180deg)로 기준 축의 방향이 바뀌어 -50px이 아니라 50px으로 Z축을 이동해야 뒤로 가는 효과가 나온다.back에 쓰인 글자(숫자6)를 보면 방향이 바뀌었음을 알 수 있다.\n\n도형을 변형하기 위해 찾아보던 도중 transform의 속성으로 translate, rotate, skew이외에 sknew가 있는 것을 이번에 알게 되었다.\nbackface-visibility: visible과 hidden의 차이를 제대로 아는 것인지 잘 모르겠다CSS3 : backface-visibility 속성(image flip 구현)이 설명을 읽고 난 후 차이점이 보여 알았다고 생각했지만backface-visibility이 글의 예제에서는 아무 차이가 없어 보여 이해가 덜된 것 같다.\n","dateCreated":"2018-09-30T17:41:40+09:00","dateModified":"2018-10-01T00:52:46+09:00","datePublished":"2018-09-30T17:41:40+09:00","description":"정육면체를 그려보자. 프로젝트명 Cube.","headline":"Cube version1","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/"},"publisher":{"@type":"Organization","name":"injaju","sameAs":["https://github.com/"],"image":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7","logo":{"@type":"ImageObject","url":"http://www.gravatar.com/avatar/6176e6547d624bab893559e2d94af2e7"}},"url":"https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/","keywords":"transform, 3d"}</script>
     <meta name="description" content="정육면체를 그려보자. 프로젝트명 Cube.">
 <meta name="keywords" content="transform,3d">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="version1">
-<meta property="og:url" content="https://jeonghyeonju.gitgub.io/2018/09/30/version1/index.html">
+<meta property="og:title" content="Cube version1">
+<meta property="og:url" content="https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/index.html">
 <meta property="og:site_name" content="Welcome to injaju">
 <meta property="og:description" content="정육면체를 그려보자. 프로젝트명 Cube.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://jeonghyeonju.gitgub.io/2018/09/30/version1/cube.png">
-<meta property="og:updated_time" content="2018-09-30T15:34:21.489Z">
+<meta property="og:image" content="https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/cube.png">
+<meta property="og:updated_time" content="2018-09-30T15:52:46.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="version1">
+<meta name="twitter:title" content="Cube version1">
 <meta name="twitter:description" content="정육면체를 그려보자. 프로젝트명 Cube.">
-<meta name="twitter:image" content="https://jeonghyeonju.gitgub.io/2018/09/30/version1/cube.png">
+<meta name="twitter:image" content="https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/cube.png">
     
     
         
@@ -219,7 +219,7 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            version1
+            Cube version1
         </h1>
     
     
@@ -276,8 +276,7 @@
             </li>
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/08/15/hello-world/" data-tooltip="Hello World" aria-label="NEXT: Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -295,7 +294,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Facebook">
                     <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </li>
@@ -303,7 +302,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Twitter">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -311,7 +310,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Google+">
                     <i class="fab fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -371,8 +370,7 @@
             </li>
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/08/15/hello-world/" data-tooltip="Hello World" aria-label="NEXT: Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -390,7 +388,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Facebook">
                     <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </li>
@@ -398,7 +396,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Twitter">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -406,7 +404,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/version1/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/" title="Share on Google+">
                     <i class="fab fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -439,7 +437,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/version1/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/">
                     <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -447,7 +445,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/version1/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/">
                     <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -455,7 +453,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/version1/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/">
                     <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
                 </a>
             </li>
@@ -511,9 +509,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'https://jeonghyeonju.gitgub.io/2018/09/30/version1/';
+                 this.page.url = 'https://jeonghyeonju.gitgub.io/2018/09/30/cube_version1/';
                  
-                    this.page.identifier = '2018/09/30/version1/';
+                    this.page.identifier = '2018/09/30/cube_version1/';
                  
              };
             (function() {
